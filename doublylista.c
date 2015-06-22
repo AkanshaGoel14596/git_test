@@ -27,7 +27,8 @@ int main(int argc, char *argv[])
 		printf("1. Insert \n2. Fetch \n3. display \n4. find\n5. exit\n");
 		scanf("%d", &choice);
 
-		switch(choice) {
+		switch(choice)
+    {
 			case 1:
 			    insert();
                 printf("\nInserted the value into linkedList\n");
@@ -56,7 +57,7 @@ int main(int argc, char *argv[])
 	}
 }
 
-
+//It insert values to the list
 void insert()
 {   Node *temp;
     temp = (Node *)malloc(sizeof(Node));
@@ -82,7 +83,7 @@ void insert()
 
 	}
 }
-
+//it feches values
 int fetch(int index)
  {    int c=0;
 
